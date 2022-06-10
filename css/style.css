@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --branco-principal: #F9F9F9;
+    --preto-pricipal: #181818;
+    --cinza-secundario: #474747;
+    --cor-de-fundo: #F9F9F9;
+    --cor-box: #EBE9EA;
+    --fonte-principal: 'Montserrat';
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    overflow-x: hidden;
+}
+
+.box_preto_conteudo {
+    display: flex;
+    justify-content: center;
+    background-color: var(--preto-pricipal);
+}
+
+.box_preto_conteudo p {
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 16px;
+    margin: 15px 0 14px 0;
+}
+
+.box_branca_conteudo {
+    display: flex;
+    justify-content: center;
+    background-color: var(--branco-principal);
+}
+
+.box_branca_conteudo p {
+    color: var(--preto-pricipal);
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: 24px;
+    margin: 6px 0 7px 0;
+}
+
+.box_conteudo_prinpal_header {
+    position: relative;
+    background-color: var(--preto-pricipal);
+
+}
+
+.box_conteudo_prinpal_header img {
+    width: 100vw;
+    opacity: 0.6;
+    display: flex;
+}
+
+.titulo_principal {
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    position: absolute;
+    margin: 129px 0 0 100px;
+    z-index: 1;
+}
+
+.paragrafo_principal {
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    position: absolute;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 196.19%;
+    margin: 187px 0 0 100px;
+    z-index: 1;
+    max-width: 600px;
+}
+
+
+.titulo_destaque {
+    color: var(--preto-pricipal);
+    font-family: var(--fonte-principal);
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 196.19%;
+    margin-top: 58px;
+}
+
+.paragrafo_main {
+    color: var(--cinza-secundario);
+    font-family: var(--fonte-principal);
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 196.19%;
+    margin-bottom: 59px;
+}
+
+.container_box {
+    max-width: 1252px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 13px;
+}
+
+.box {
+    background-color: var(--cor-box);
+    border-radius: 5px;
+    width: 300px;
+    height: 302px;
+    margin-bottom: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover img {
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+    
+}
+.box:hover {
+    background-color: var(--cor-de-fundo);
+}
+.box:active {
+    border: 1px solid green;
+}
+
+.footer_conteudo {
+    background-color: var(--preto-pricipal);
+    margin-top: 61px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_conteudo p {
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    margin: 12px 0 13px 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 196.19%;
+}
+
+#imagem_tenis_pequeno {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .titulo_principal {
+        margin-top: 75px;
+    }
+
+    .paragrafo_principal {
+        margin-top: 118px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .titulo_principal {
+        margin-top: 40px;
+    }
+
+    .paragrafo_principal {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .box_conteudo_prinpal_header img {
+        display: none;
+
+    }
+
+    #imagem_tenis_pequeno {
+        display: block;
+    }
+
+    .titulo_principal {
+        font-size: 28px;
+        margin: 122px 44px 221px 20px;
+    }
+
+    .paragrafo_principal {
+        font-size: 16px;
+        margin: 168px 37px 122px 20px;
+    }
+
+    .paragrafo_main {
+        margin: 0 20px 59px 20px;
+
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .titulo_principal {
+        font-size: 23px;
+        margin: 100px 44px 221px 35px;
+    }
+    .paragrafo_principal {
+        margin: 130px 37px 122px 35px
+    }
+
+    .paragrafo_main {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .titulo_principal {
+        font-size: 19px;
+        margin: 60px 44px 221px 35px;
+    }
+
+    .paragrafo_principal {
+        font-size: 13px;
+        margin-top: 87px;
+    }
+    
+}
